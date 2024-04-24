@@ -60,7 +60,7 @@ const Home: NextPage<{ sections: AppPageSection[] }> = ({ sections }) => {
 };
 
 export const getStaticProps: GetStaticProps =
-  async ({}: GetStaticPropsContext) => {
+  async ({ }: GetStaticPropsContext) => {
     const queryClient = new QueryClient();
 
     const config: AppConfig = getAppConfig();
